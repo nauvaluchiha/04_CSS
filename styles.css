@@ -18,6 +18,7 @@ header > h2 {
   font-size: 20px;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   line-height: var(--h2-height);
+  color: black;
 }
 
 .hero__section {
@@ -26,7 +27,6 @@ header > h2 {
   background-color: #37517e;
   display: flex;
   align-items: center;
-  /* flex-wrap: wrap; */
 }
 
 .hero__section > div {
@@ -35,7 +35,7 @@ header > h2 {
   padding: 0 15px;
   max-width: 100%;
   min-width: 200px;
-  /* background-color: aqua; */
+  /* background-color: aqua;  buat testing*/
   margin-left: auto;
   margin-right: auto;
   align-items: center;
@@ -43,12 +43,11 @@ header > h2 {
 }
 
 .hero__section > div > div {
-  /* width: 100%; */
   min-width: 200px;
-  /*max width di sini penting*/
+  /*max width penting*/
   max-width: 375.5px;
   height: fit-content;
-  /* background-color: antiquewhite; */
+  /* background-color: antiquewhite;  buat testing */
   margin-left: auto;
   margin-right: auto;
 }
@@ -63,7 +62,7 @@ header > h2 {
   font-weight: lighter;
   font-size: 15px;
   margin-top: 5px;
-  /* color: hsla(0, 0%, 100%, 0.6); */
+  /* color: hsla(0, 0%, 100%, 0.6); atau */
   color: white;
   opacity: 60%;
   text-align: center;
@@ -75,28 +74,43 @@ header > h2 {
   margin-top: 45px;
 }
 
-.container__hero__1 > div > #btn-1 {
+#btn-1 {
   background-color: #47b2e4;
   border: 0;
   border-radius: 50px;
   padding: 10px 25px 10px 25px;
 }
 
-.container__hero__1 > div > #btn-1 > a {
+#btn-1 > a {
   text-decoration: none;
   color: white;
+  font-family: Jost, Arial, Helvetica, sans-serif;
 }
 
-.container__hero__1 > div > #btn-2 {
+#btn-1:hover{
+  background-color: #59cbff;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+#btn-2 {
   background-color: transparent;
   border: 0;
+  border-radius: 50px;
+  padding: 10px 25px 10px 25px;
   margin-left: 60px;
 }
 
-.container__hero__1 > div > #btn-2 > a {
+#btn-2 > a {
   text-decoration: none;
   color: white;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+#btn-2:hover{
+    background-color: #4dc6ff;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
 }
 
 .container__hero__2 > div {
@@ -110,7 +124,6 @@ header > h2 {
   min-width: 250px;
 }
 
-/* contact section*/
 .contact__section {
   background-color: #f3f5fa;
   height: 250px;
@@ -163,7 +176,7 @@ header > h2 {
   position: relative;
 }
 
-.newsletter-btn {
+#btn-3 {
   min-width: 15%;
   flex-shrink: 0;
   height: 100%;
@@ -174,6 +187,14 @@ header > h2 {
   position: relative;
   text-align: center;
   color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+#btn-3:hover {
+  background-color: #79d5ff;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
 }
 
 .footer__section__1 > div {
@@ -246,12 +267,13 @@ header > h2 {
   font-size: 12px;
 }
 
-.footer__section__2 > div > span {
+.footer__section__2 > div span {
   color: #47B2E4;
 }
 
-@media only screen and (min-width: 640px) {
-}
+/* @media only screen and (min-width: 640px) {
+} */
+
 @media only screen and (min-width: 768px) {
   .hero__section > div {
     flex-wrap: nowrap;
@@ -304,12 +326,15 @@ header > h2 {
     gap: 200px;
   }
 }
+
 @media only screen and (min-width: 1024px) {
   .footer__section__2 {
     gap: 550px;
   }
 }
-@media only screen and (min-width: 1280px) {
+
+/* @media only screen and (min-width: 1280px) {
 }
+
 @media only screen and (min-width: 1536px) {
-}
+} */
